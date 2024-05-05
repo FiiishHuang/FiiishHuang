@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="css/video.css">
+    <style>
+        *{
+            font-family: 'Nunito', sans-serif;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+        .check{
+            border: solid 1px red;
+        }
+        .container{
+            max-width: 900px;
+            padding: 1rem;
+            margin: auto;
+            position: relative;        
+        }
+        h1{
+            text-align: center;
+            padding-top: 5rem;
+        }
+        .container img{
+            max-width: 100%;
+        }
+        .col{
+            display:inline;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .col-8{
+            width: 70%;
+        }
+        .col-2{
+            min-width: 60%;
+            text-align: left;
+        }
+        .col p{
+            padding-left: 1rem;
+            text-align: left;
+        }
+        .section{
+            text-align: center;
+        }
+        .col-6{
+            width: 49%;
+            display: inline-flex;
+                }
+        .col-6 img{
+            max-width: 100%;
+        }
+     
+        .footer{
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.3rem;
+        }
+        @media (max-width:991px) {
+            .col{
+                margin: auto;
+                display: block;
+            }
+            .col-6{
+                display: block;
+                width: 100%;
+            }
+            .footer{
+                font-size: .5rem;
+            }
+      
+    }
+    </style>
+</head>
+<body>
+    <!-- <div id="particles-js"></div> -->
+    
+    <div class="container">
+
+        <h1>VR-西方極樂世界</h1>
+        <br>
+        <p class="section"><u>由於疫情影響，該專案目前不得不於2021年中止。</u><br><br>Unreal、HTV vive、3Dmax、Photoshop、iClone 7、Character creator</p>
+        <p class="section">材質製作測試、物理效果測試、減模型面數</p>
+        <div class="col col-8">
+            <div class="videobox"><iframe frameborder="0" src="https://www.youtube.com/embed/aKIXkRKzTlg" allowFullScreen="true"></iframe></div>
+        </div>
+        <div class="col col-2">
+            <h3>接花雨</h3>
+            <p>將佛教經典中提到西方極樂世界中的美麗場景。</p>
+                <p>其中以花供佛為主要互動元素，讓使用者拿vive手桿，將天空飄下的花雨接滿5個，場景就會轉換至各方佛的面前將其獻上，象徵對佛祖的虔誠。
+                    </p>                
+                <p>利用Unreal內部的粒子系統製造出下花雨的畫面，並將粒子結合程式，讓使用者可以拿搖桿做互動。</p>
+                
+            <p>*此影片僅為場景展示，已將互動的部分先行關閉</p>
+        </div>
+        <div class="col col-8">
+            <div class="videobox"><iframe frameborder="0" src="https://www.youtube.com/embed/muXuus9B1UY" allowFullScreen="true"></iframe></div>
+        </div>
+        <div class="col col-2">
+            <h3>四十八大願  發願</h3>
+            <p>以Character creator先將人物形象調整至約略理想的狀態</p>
+                <p>人物動畫部分則使用iClone7進行編輯</p>                
+                <p>人在進行微量的動作時都會有些微的自然晃動，而iClone7內有針對動作的強度做一個數據化的調整，讓說話期間的自然晃動可以順利的完成。</p>
+        </div>
+    
+        <div class="col-6">
+            <img src="graphic/west/view_03.jpg" alt="">
+        </div>
+        <div class="col-6">
+            <img src="graphic/west/view_04.jpg" alt="">
+        </div>
+        <div class="col-6">
+            <img src="graphic/west/view_05.jpg" alt="">
+        </div>
+        <div class="col-6">
+            <img src="graphic/west/view_06.jpg" alt="">
+        </div>
+        <p style="text-align: center;">講經說法場景展示(Unreal)</p>
+        
+        
+
+
+    </div>
+
+    <div class="footer">created by Fiish Huang</div>
+
+
+
+     <!-- particle js -->
+     <script src="js/particles.min.js"></script>
+     <script src="js/app.js"></script>
+</body>
+</html>

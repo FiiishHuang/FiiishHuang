@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="css/video.css">
+    <style>
+        *{
+            font-family: 'Nunito', sans-serif;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+        .check{
+            border: solid 1px red;
+        }
+        .container{
+            max-width: 900px;
+            padding: 1rem;
+            margin: auto;
+            position: relative;        
+        }
+        h1{
+            text-align: center;
+            padding-top: 5rem;
+        }
+        .container img{
+            max-width: 100%;
+        }
+        .col{
+            display:inline;
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+            
+        }
+        .inline{
+            display:inline-flex;
+            margin-top: 1rem;
+            vertical-align: middle;
+            padding-bottom: 1rem;
+        }
+        .col-8{
+            max-width: 70%;
+        }
+        .col-2{
+            max-width: 30%;
+        }
+        .col p{
+            padding-left: 1rem;
+            text-align: left;
+        }
+        .section{
+            text-align: center;
+        }
+        .col-6{
+            width: 49%;
+            display: inline-flex;
+                }
+        .col-6 img{
+            max-width: 100%;
+        }
+     
+        .footer{
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.3rem;
+        }
+        @media (max-width:991px) {
+            .col, .inline{
+                margin: auto;
+                display: block;
+            }
+            .col-6{
+                display: block;
+                width: 100%;
+            }
+            .inline p{
+                text-align: center;
+            }
+            .footer{
+                font-size: .5rem;
+            }
+      
+    }
+    </style>
+</head>
+<body>
+    <!-- <div id="particles-js"></div> -->
+    
+    <div class="container">
+
+        <h1>Independent AR watch project -2011</h1>
+        <p class="section">3Dmax、Photoshop、Lua script</p>
+        <div class="col col-8">
+            <div class="videobox"><iframe frameborder="0" src="https://www.youtube.com/embed/uhVLXV_24SU" allowFullScreen="true"></iframe></div>
+        </div>
+        <div class="inline col-8">
+            <img src="images/ar/ar_01.jpg" alt="">
+        </div>
+        <div class="inline col-2">
+            <p>程式主要畫面</p>
+        </div>
+        <div class="inline col-8">
+            <img src="images/ar/work_01.jpg" alt="">
+        </div>
+        <div class="inline col-2">
+            <p>廠商預先設計的使用畫面</p>
+        </div>
+        <div class="inline col-8">
+            <img src="images/ar/work_02.jpg" alt="">
+        </div>
+        <div class="inline col-2">
+            <p>手錶3D模型製作</p>
+        </div>
+        <div class="inline col-8">
+            <img src="images/ar/work_03.jpg" alt="">
+        </div>
+        <div class="inline col-2">
+            <p>材質測試</p>
+        </div>
+        <div class="inline col-8">
+            <img src="images/ar/work_04.jpg" alt="">
+        </div>
+        <div class="inline col-2">
+            <p>互動程式撰寫</p>
+        </div>
+        <div class="inline col-8">
+            <img src="images/ar/work_05.jpg" alt="">
+        </div>
+        <div class="inline col-2">
+            <p>實際操作畫面示意</p>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">created by Fiish Huang</div>
+
+
+
+     <!-- particle js -->
+     <script src="js/particles.min.js"></script>
+     <script src="js/app.js"></script>
+</body>
+</html>
