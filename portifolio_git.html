@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiish Huang's Portifolio</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/portifolio.css">
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- filter gallery -->
+    
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <!-- folio -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css'>
+    <link rel="stylesheet" href="css/folio.css">
+    <style>
+        .check{
+      border: 1px solid red;
+    }
+    .project{
+      max-height: 40vh;
+      min-height: 25vh;      
+      cursor: pointer;
+    }
+    #portfolio{
+      width: 75%;
+      margin: auto;
+    }
+    .toolbar{
+      text-align: center;
+    }
+
+    .view{
+      z-index: 3;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      border: solid 1px #555;
+      padding: .8rem 1rem;
+      background-color: rgba(255, 255, 255, .5);
+    }
+    .navbar{
+      display: inline-block;
+
+    }
+    .portfolio-menu{
+      text-align:center;
+    }
+    .portfolio-menu ul li{
+      display:inline-block;
+      margin:0;
+      list-style:none;
+      padding:10px 15px;
+      cursor:pointer;
+      -webkit-transition:all 05s ease;
+      -moz-transition:all 05s ease;
+      -ms-transition:all 05s ease;
+      -o-transition:all 05s ease;
+      transition:all .5s ease;
+    }
+
+    .portfolio-item .item{
+      float:left;
+      margin-bottom:10px;
+    }
+    .item{
+      width: 250px;
+      height: 180px;
+      overflow: hidden;
+    }
+    .item img{
+      width: 100%;
+    }
+    .btn:hover{
+      color: #fff;
+    }
+
+    @media (max-width:991px) {
+      #portfolio{
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        width: 100%;
+      }
+      .view{
+        font-size: 1.19rem;
+      }
+    }
+
+    @media (max-width:500px) {
+      #portfolio{
+        display: block;
+      }
+      .grid__overlay{
+        display: block;
+      }
+      .view{
+        font-size: 1.5rem;
+      }
+      .toolbar{
+        font-size: 24px;
+      }
+      
+    }
+    </style>
+</head>
+<body>
+
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <!-- header section start -->
+    <header>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#portifolio">Portifolio</a>
+        </nav>
+    </header>
+
+    <!-- header section end -->
+
+    <!-- home section start -->
+    <section class="home" id="home">
+
+        <div id="particles-js"></div>
+
+        <div class="content">
+            <img class="tilt" src="graphic/fiish.jpg" alt="">
+            <h3>Fiish <span>Huang</span></h3>
+            <p>i am a <span class="typing-text">web designer</span> </p>
+            <a href="#about" class="btn">about me</a>
+        </div>
+
+    </section>
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h1 class="heading"> about <span>me</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="graphic/fiish2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>my name is <span>fiish huang</span></h3>
+
+                <div class="box-container">
+                    <div class="box">
+                        <p><span>University：</span>實踐大學(USC) 資訊科技與管理學系 2012畢</p>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section end -->
+
+
+    <!-- service section start -->
+    <section class="service" id="service">
+        <h1 class="heading">my <span>services</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa fa-code"></i>
+                <h3>web designer</h3>
+                <p>Software: Visual studio code <br>
+                Tools: html、css</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-paint-brush"></i>
+                <h3>user interface designer</h3>
+                <p>Tools: Figma、Adobe XD</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-paint-brush"></i>
+                <h3>graphic designer</h3>
+                <p>Tools: Photoshop、Illustrator</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- service section end -->
+
+    <!-- portifolio section start -->
+
+    <h1 class="heading" id="portifolio">my <span>portifolio</span></h1>
+
+    <div class="container">
+      <!-- <div class="row">
+         <div class="col-lg-12 text-center my-2">
+            <h4 class="border-bottom border-dark p-2">Isotope filter magical layouts with Bootstrap 4</h4>
+           <center>for more <a style="text-align:center;" href="https://www.myprogrammingtutorials.com/unordered-list-into-multiple-columns.html" target="_blank">css tutorials</a> visit here.</center>
+     </div>
+      </div> -->
+      <div class="portfolio-menu mt-2 mb-4">
+         <ul>
+            <li class="btn btn-outline-dark active" data-filter="*">All</li>
+            <li class="btn btn-outline-dark" data-filter=".web">Website</li>
+            <li class="btn btn-outline-dark" data-filter=".ui">UI</li>
+            <li class="btn btn-outline-dark" data-filter=".gra">Banner</li>
+            <li class="btn btn-outline-dark" data-filter=".poster">Poster</li>
+            <li class="btn btn-outline-dark" data-filter=".draw">Draw</li>
+            <li class="btn btn-outline-dark text" data-filter=".ar">AR</li>
+            <li class="btn btn-outline-dark" data-filter=".vr">VR</li>
+         </ul>
+      </div>
+      <div class="portfolio-item row">
+
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="https://fiiishhuang.github.io/FiiishHuang/pizza/pizza.html" target="_blank"> 
+            <img class="img-fluid" src="graphic/website/coffee.jpg" alt="">
+            </a>
+         </div>
+
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="https://fiiishhuang.github.io/FiiishHuang/scrolling/scrolling.html" target="_blank"> 
+            <img class="img-fluid" src="graphic/website/scrolling2.jpg" alt="">
+            </a>
+         </div>
+
+         <div class="item ui col-lg-3 col-md-4 col-6 col-sm">
+            <a href="https://www.figma.com/proto/2gMvgRL8BbBPu0nvyCX3lZ/%E6%B7%BA%E8%AA%9E%E9%87%91%E5%B7%A5(%E9%9D%9E%E5%95%86%E6%A5%AD%E7%94%A8%E9%80%94)?node-id=1%3A2&starting-point-node-id=1%3A2" target="_blank">
+            <img class="img-fluid" src="graphic/ui/kinjo.jpg" alt="">
+            </a>
+         </div>
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="https://my.spline.design/0223test-2721c4b952dbfdf46fd06c3f8d46512b/" target="_blank">
+            <img class="img-fluid" src="graphic/website/penguin_orig.jpg" alt="">
+            </a>
+         </div>
+         
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="https://fiiishhuang.github.io/FiiishHuang/xbox/xbox.html" target="_blank">
+            <img class="img-fluid" src="graphic/website/xbox.jpg" alt="">
+            </a>
+         </div>
+         <div class="item ar col-lg-3 col-md-4 col-6 col-sm">
+          <a href="AR.html" target="_blank">
+          <img class="img-fluid" src="graphic/ar/ar_00.jpg" alt="">
+          </a>
+        </div>
+        <div class="item vr col-lg-3 col-md-4 col-6 col-sm">
+          <a href="VR.html" target="_blank">
+          <img class="img-fluid" src="graphic/west/vr.jpg" alt="">
+          </a>
+        </div>
+         <div class="item ui col-lg-3 col-md-4 col-6 col-sm">
+            <a href="holybar.html" target="_blank">
+            <img class="img-fluid" src="graphic/ui/order.jpg" alt="">
+            </a>
+         </div>
+         
+         <div class="item ui col-lg-3 col-md-4 col-6 col-sm">
+          <a href="abdominal.html" target="_blank">
+          <img class="img-fluid" src="graphic/poster/poster_10.jpg" alt="">
+          </a>
+        </div>
+        <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/website/thai.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/website/thai.jpg" alt="">
+          </a>
+       </div>
+         
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/website/web.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/website/web.jpg" alt="">
+            </a>
+         </div>
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/website/web_wedding.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/website/web_wedding.jpg" alt="">
+            </a>
+         </div>
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/website/web_re.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/website/web_re.jpg" alt="">
+            </a>
+         </div>
+         <div class="item web col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/website/web_turkey.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/website/web_turkey.jpg" alt="">
+            </a>
+         </div>
+         <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/poster/poster_03.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/poster/poster_03.jpg" alt="">
+          </a>
+      </div>
+      <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/poster/poster_04.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/poster/poster_04.jpg" alt="">
+        </a>
+    </div>
+      <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/poster/poster_05.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/poster/poster_05.jpg" alt="">
+        </a>
+    </div>
+    <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+      <a href="graphic/poster/poster_06.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+      <img class="img-fluid" src="graphic/poster/poster_06.jpg" alt="">
+      </a>
+    </div>
+    <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+      <a href="graphic/poster/poster_07.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+      <img class="img-fluid" src="graphic/poster/poster_07.jpg" alt="">
+      </a>
+    </div>
+    <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+      <a href="graphic/poster/poster_08.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+      <img class="img-fluid" src="graphic/poster/poster_08.jpg" alt="">
+      </a>
+    </div>
+    <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+      <a href="graphic/poster/poster_01.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+      <img class="img-fluid" src="graphic/poster/poster_01.jpg" alt="">
+      </a>
+  </div>
+  <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+    <a href="graphic/poster/poster_02.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+    <img class="img-fluid" src="graphic/poster/poster_02.jpg" alt="">
+    </a>
+</div>
+<div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+  <a href="graphic/poster/poster_11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+  <img class="img-fluid" src="graphic/poster/poster_11.jpg" alt="">
+  </a>
+</div>
+         <div class="item draw col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/draw/draw_01.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/draw/draw_01.jpg" alt="">
+            </a>
+         </div>
+         <div class="item draw col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/draw/draw_02.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/draw/draw_02.jpg" alt="">
+          </a>
+       </div>
+       <div class="item draw col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/draw/draw_03.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/draw/draw_03.jpg" alt="">
+        </a>
+     </div>
+        <div class="item draw col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/draw/draw_04.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/draw/draw_04.jpg" alt="">
+          </a>
+        </div>
+          <div class="item draw col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/draw/draw_05.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/draw/draw_05.jpg" alt="">
+          </a>
+          </div>
+            
+              
+          <div class="item poster col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/poster/poster_09.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/poster/poster_09.jpg" alt="">
+            </a>
+          </div>
+          
+          
+          
+          <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+            <a href="graphic/banner/bnner_01.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="graphic/banner/bnner_01.jpg" alt="">
+            </a>
+         </div>
+         <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/banner/bnner_02.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/banner/bnner_02.jpg" alt="">
+          </a>
+       </div>
+       <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_03.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_03.jpg" alt="">
+        </a>
+     </div>
+     <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+      <a href="graphic/banner/bnner_04.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+      <img class="img-fluid" src="graphic/banner/bnner_04.jpg" alt="">
+      </a>
+        </div>
+        <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+          <a href="graphic/banner/bnner_05.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+          <img class="img-fluid" src="graphic/banner/bnner_05.jpg" alt="">
+          </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_06.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_06.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_07.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_07.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_08.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_08.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_09.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_09.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_10.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_10.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_11.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_12.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_12.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_13.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_13.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_14.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_14.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_15.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_15.jpg" alt="">
+        </a>
+      </div>
+      <div class="item gra col-lg-3 col-md-4 col-6 col-sm">
+        <a href="graphic/banner/bnner_16.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="graphic/banner/bnner_16.jpg" alt="">
+        </a>
+      </div>
+      </div>
+   </div>
+
+
+
+   
+
+
+
+
+
+
+
+    <!-- <div id="portifolio">
+        <h1 class="heading">my <span>portifolio</span></h1>
+    </div>
+    <div class="toolbar mb2 mt2">
+        <button class="btn fil-cat" data-rel="all">All</button>
+        <button class="btn fil-cat" data-rel="web">Websites</button>
+        <button class="btn fil-cat" data-rel="ui">UI</button>
+        <button class="btn fil-cat" data-rel="graph">Graphic</button>
+        <button class="btn fil-cat" data-rel="ar">AR</button>
+        <button class="btn fil-cat" data-rel="vr">VR</button>
+      </div>  -->
+    
+    
+    <!-- partial:index.partial.html -->
+
+    <!-- <section id="portfolio">
+      
+        <div class="project tile scale-anm ui all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=700&q=80" />
+          <p>websites</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> front-end</h3>
+          
+        </div>
+      
+      
+        <div class="project tile scale-anm ui all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1521104955835-ba91c70d6443?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38cdeda7d073c4b6d47a5776f184cba9&auto=format&fit=crop&w=700&q=80" />
+          <p>pure css</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> front-end</h3>
+          
+        </div>
+      
+      
+        <div class="project tile scale-anm web all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
+          <p>web apps</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> full-stack</h3>
+          
+        </div>
+      
+      
+        <div class="project tile scale-anm web all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+          
+        </div>
+      
+    
+      
+        <div class="project tile scale-anm ui all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=700&q=80" />
+          <p>websites</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> front-end</h3>
+          
+        </div>
+      
+        
+      
+        <div class="project tile scale-anm web all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-0.3.5&s=a4b3dc4bee43da458f6aa5c05be6bfc4&auto=format&fit=crop&w=700&q=80" />
+          <p>pure css</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> front-end</h3>
+          
+        </div>
+      
+        
+      
+        <div class="project tile scale-anm graph all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1481762554390-ff5562748bdf?ixlib=rb-0.3.5&s=1b7f850b7f8f702e237b0f81c0ec0bf5&auto=format&fit=crop&w=700&q=80" />
+          <p>web apps</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> full-stack</h3>
+          
+        </div>
+      
+        
+      
+        <div class="project tile scale-anm web all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+          
+        </div>
+    
+        <div class="project tile scale-anm graph all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+          
+        </div>
+    
+        <div class="project tile scale-anm web all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+          
+        </div>
+    
+        <div class="project tile scale-anm ui all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+          
+        </div>
+    
+        <div class="project tile scale-anm ar all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+        </div>
+    
+        <div class="project tile scale-anm vr all">
+          <img class="project__image" src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=700&q=80" />
+          <p>daily ui</p>
+          <button class="view check">View More</button>
+          <h3 class="grid__title"> ui/ux design</h3>
+        </div>
+      
+      
+        <div class="overlay">
+          <div class="overlay__inner">
+            <button class="close">close X</button>
+            <img>
+          </div>
+        </div>
+      </section> -->
+
+
+
+    
+    <!-- footer -->
+    <div class="footer">created by Fiish Huang</div>
+
+
+
+    <!-- js -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> -->
+    <!-- catagory -->
+    <!-- <script src="js/catagory.js"></script> -->
+    <!-- look -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- type js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- particle js -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- vanilla-tilt js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <!-- filter gallery -->
+    <script>
+      $('.portfolio-item').isotope({
+       itemSelector: '.item',
+       layoutMode: 'fitRows'
+     });
+     $('.portfolio-menu ul li').click(function(){
+       $('.portfolio-menu ul li').removeClass('active');
+       $(this).addClass('active');
+       
+       var selector = $(this).attr('data-filter');
+       $('.portfolio-item').isotope({
+         filter:selector
+       });
+       return  false;
+     });
+     $(document).ready(function() {
+     var popup_btn = $('.popup-btn');
+     popup_btn.magnificPopup({
+     type : 'image',
+     gallery : {
+       enabled : true
+     }
+     });
+     });
+ </script>
+
+
+    <!-- menu js -->
+    <script>
+        let menu=document.querySelector('#menu-bars');
+        let header=document.querySelector('header');
+
+        menu.onclick= () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        window.onscroll= () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        }
+
+        // type js
+
+        var typed=new Typed('.typing-text',{
+            strings:['Web designer','user interface designer','graphic designer','Web designer'],
+            loop:true,
+            typeSpeed:150
+        });
+
+        VanillTilt.init(document.querySelectorAll('.tilt'),{
+            max : 25
+        });
+
+
+
+    </script>
+</body>
+</html>
